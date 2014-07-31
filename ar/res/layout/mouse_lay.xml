@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity" >
+    
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/title_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mouse Input"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="horizontal"
+			android:gravity="right">
+			
+			<ImageView
+			    style="@style/TitleBarSeparator"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+
+			<ImageView
+			    android:layout_margin="5dp"
+			    android:clickable="true"
+			    android:onClick="onHome"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/home" />
+			
+			<ImageView
+			    style="@style/TitleBarSeparator"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+
+			<ImageView
+			    android:layout_margin="5dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/mouse_light" />
+			
+			<ImageView
+			    style="@style/TitleBarSeparator"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+			
+			<ImageView
+			    android:layout_margin="5dp"
+			    android:clickable="true"
+			    android:onClick="onKeyboard"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/keyboard" />
+			
+        </LinearLayout>
+              
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/header"
+        android:weightSum="1"
+        android:id="@+id/txtMouse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:maxLines="10"
+        android:padding="15dp"
+        android:text="Use touch to simulate mouse movement:\nTap with one finger to left-click\nTap with two fingers for right-click\nDrag with two fingers to scroll"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:clickable="true"
+            android:onClick="leftClick"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:src="@drawable/mouse_left" />
+
+        <ImageView
+            android:clickable="true"
+            android:onClick="rightClick"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:src="@drawable/mouse_right" />
+        
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/imgScroll"
+        android:layout_width="50dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mouse_mid" />
+    
+</RelativeLayout>

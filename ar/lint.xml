@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res\layout\activity_home.xml" />
+        <ignore path="res\layout\file_item.xml" />
+        <ignore path="res\layout\file_lay.xml" />
+        <ignore path="res\layout\kb_alpha.xml" />
+        <ignore path="res\layout\kb_function.xml" />
+        <ignore path="res\layout\kb_navigation.xml" />
+        <ignore path="res\layout\kb_numeric.xml" />
+        <ignore path="res\layout\keyboard_lay.xml" />
+        <ignore path="res\layout\mouse_lay.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res\layout\activity_home.xml" />
+        <ignore path="res\layout\file_lay.xml" />
+        <ignore path="res\layout\header.xml" />
+        <ignore path="res\layout\kb_alpha.xml" />
+        <ignore path="res\layout\kb_function.xml" />
+        <ignore path="res\layout\kb_navigation.xml" />
+        <ignore path="res\layout\kb_numeric.xml" />
+        <ignore path="res\layout\keyboard_lay.xml" />
+        <ignore path="res\layout\mouse_lay.xml" />
+        <ignore path="res\layout\power_lay.xml" />
+        <ignore path="res\layout\slide_lay.xml" />
+        <ignore path="res\layout\utility.xml" />
+    </issue>
+    <issue id="TextFields">
+        <ignore path="res\layout\kb_alpha.xml" />
+    </issue>
+    <issue id="UseCompoundDrawables">
+        <ignore path="res\layout\activity_home.xml" />
+    </issue>
+</lint>

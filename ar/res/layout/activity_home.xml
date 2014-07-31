@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity" >
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Remote"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF0F8FF"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:stretchColumns="0,1" >
+
+    	<TableRow 
+	        android:layout_height="0dp"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="1" >
+	        
+    	    <LinearLayout android:orientation="vertical"
+	            android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:padding="5dip"
+            	android:gravity="center">
+	            
+            	<ImageView
+            	    android:id="@+id/imgInput"
+	        		android:layout_width="75dp"
+        			android:layout_height="75dp"
+        			android:clickable="true"
+        			android:onClick="onNavi"
+        			android:src="@drawable/input_bg" />
+	            
+            	<TextView
+	                android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="Basic Inputs"
+                	android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+        	</LinearLayout>
+        	
+    	    <LinearLayout android:orientation="vertical"
+	            android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:padding="5dip"
+            	android:gravity="center">
+	            
+            	<ImageView
+            	    android:id="@+id/imgFile"
+            	    android:layout_width="75dp"
+            	    android:layout_height="75dp"
+            	    android:clickable="true"
+            	    android:onClick="onNavi"
+            	    android:src="@drawable/file_bg" />
+	            
+            	<TextView
+	                android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="File Manager"
+                	android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+        	</LinearLayout>
+	        
+		</TableRow>
+	    
+	    <TableRow 
+        	android:layout_height="0dp"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="1"
+        	android:gravity="center" >
+	    	
+        	<LinearLayout android:orientation="vertical"
+	            android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:padding="5dip"
+            	android:gravity="center">
+	            
+            	<ImageView
+            	    android:id="@+id/imgPower"
+            	    android:layout_width="75dp"
+            	    android:layout_height="75dp"
+            	    android:clickable="true"
+            	    android:onClick="onNavi"
+            	    android:src="@drawable/power_bg" />
+	            
+            	<TextView
+	                android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="Power Control"
+                	android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+        	</LinearLayout>
+	            
+    		<LinearLayout android:orientation="vertical"
+	            android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:padding="5dip"
+            	android:gravity="center">
+	            
+            	<ImageView
+            	    android:id="@+id/imgSlide"
+            	    android:layout_width="75dp"
+            	    android:layout_height="75dp"
+            	    android:clickable="true"
+            	    android:onClick="onNavi"
+            	    android:src="@drawable/slide_bg" />
+	            
+            	<TextView
+	                android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="Slide Show"
+                	android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+        	</LinearLayout>
+	        
+	    </TableRow>
+	    
+	    <TableRow 
+        	android:layout_height="0dp"
+        	android:layout_width="fill_parent"
+        	android:layout_weight="1"
+        	android:gravity="center" >
+	    	
+        	<LinearLayout android:orientation="vertical"
+	            android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:padding="5dip"
+            	android:gravity="center">
+	            
+            	<ImageView
+            	    android:id="@+id/imgUtil"
+            	    android:layout_width="75dp"
+            	    android:layout_height="75dp"
+            	    android:clickable="true"
+            	    android:onClick="onNavi"
+            	    android:src="@drawable/util_bg" />
+	            
+            	<TextView
+	                android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="Utility"
+                	android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+        	</LinearLayout>
+	            
+    		<LinearLayout android:orientation="vertical"
+	            android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:padding="5dip"
+            	android:gravity="center">
+	            
+            	<ImageView
+            	    android:id="@+id/imgExit"
+            	    android:layout_width="75dp"
+            	    android:layout_height="75dp"
+            	    android:clickable="true"
+            	    android:onClick="onNavi"
+            	    android:src="@drawable/exit_bg" />
+	            
+            	<TextView
+	                android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:text="Exit"
+                	android:textAppearance="?android:attr/textAppearanceMedium" />
+            	
+			</LinearLayout>
+	    </TableRow>
+	</TableLayout>
+</LinearLayout>

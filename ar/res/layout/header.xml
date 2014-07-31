@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:paddingLeft="5dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/title_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Remote"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="horizontal"
+			android:gravity="right">
+			
+			<ImageView style="@style/TitleBarSeparator"/>
+
+			<ImageView
+			    android:layout_margin="5dp"
+			    android:clickable="true"
+			    android:onClick="onHome"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/home" />
+			
+			<ImageView style="@style/TitleBarSeparator"/>
+
+			<ImageView
+			    android:layout_margin="5dp"
+			    android:clickable="true"
+			    android:onClick="onMouse"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/mouse" />
+			
+			<ImageView style="@style/TitleBarSeparator"/>
+			
+			<ImageView
+			    android:layout_margin="5dp"
+			    android:clickable="true"
+			    android:onClick="onKeyboard"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/keyboard" />
+			
+        </LinearLayout>
+              
+    </LinearLayout>

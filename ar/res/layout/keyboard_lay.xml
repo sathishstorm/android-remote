@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/title_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Remote"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="horizontal"
+			android:gravity="right">
+			
+			<ImageView style="@style/TitleBarSeparator"/>
+
+			<ImageView
+			    android:layout_margin="5dp"
+			    android:clickable="true"
+			    android:onClick="onHome"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/home" />
+			
+			<ImageView style="@style/TitleBarSeparator"/>
+
+			<ImageView
+			    android:layout_margin="5dp"
+			    android:clickable="true"
+			    android:onClick="onMouse"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/mouse" />
+			
+			<ImageView style="@style/TitleBarSeparator"/>
+			
+			<ImageView
+			    android:layout_margin="5dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/keyboard_light" />
+			
+        </LinearLayout>
+              
+    </LinearLayout>
+    
+    <ViewFlipper
+        android:id="@+id/vfKeyboard" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <include android:id="@+id/layAlpha" layout="@layout/kb_alpha"/>
+        <include android:id="@+id/layNumeric" layout="@layout/kb_numeric"/>
+        <include android:id="@+id/layNavi" layout="@layout/kb_navigation"/>
+        <include android:id="@+id/layFunc" layout="@layout/kb_function"/>
+        
+    </ViewFlipper>
+    
+</LinearLayout>

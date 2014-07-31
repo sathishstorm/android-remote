@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/layTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/subtitle_bg"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+        
+    	<ImageView
+        	android:layout_width="25dp"
+        	android:layout_height="25dp"
+        	android:layout_alignParentLeft="true"
+        	android:layout_alignParentTop="true"
+        	android:clickable="true"
+        	android:onClick="onPrev"
+        	android:src="@drawable/prev" />
+	
+	    <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentTop="true"
+        	android:layout_centerHorizontal="true"
+        	android:text="Functions"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+	</RelativeLayout>
+	
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layTitle"
+        android:scrollbars="none" >
+        
+        <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:stretchColumns="0, 1, 2, 3" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onFunClick"
+                android:text="F1"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onFunClick"
+                android:text="F2"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onFunClick"
+                android:text="F3"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onFunClick"
+                android:text="F4"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onFunClick"
+                android:text="F5"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onFunClick"
+                android:text="F6"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onFunClick"
+                android:text="F7"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onFunClick"
+                android:text="F8"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onFunClick"
+                android:text="F9"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onFunClick"
+                android:text="F10"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onFunClick"
+                android:text="F11"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onFunClick"
+                android:text="F12"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+        </TableRow>
+    </TableLayout>
+        
+    </ScrollView>
+    
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity" >
+    
+    <include layout="@layout/header"
+        android:id="@+id/header" />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:padding="10dp" >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/slideStart"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/green_key_press"
+                android:onClick="onSlideClick"
+                android:text="Start"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            <Button
+                android:id="@+id/slideStop"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/red_key_press"
+                android:onClick="onSlideClick"
+                android:text="Stop"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/slidePrev"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/key_press"
+                    android:onClick="onSlideClick"
+                    android:text="Prev"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+                <Button
+                    android:id="@+id/slideGoto"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/key_press"
+                    android:onClick="onSlideClick"
+                    android:text="Go To"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+                <Button
+                    android:id="@+id/slideNext"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/key_press"
+                    android:onClick="onSlideClick"
+                    android:text="Next"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+            </LinearLayout>
+            
+            <Button
+                android:id="@+id/slideFull"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onSlideClick"
+                android:text="Fullscreen"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+            
+        </LinearLayout>        
+                        
+	</ScrollView>
+    
+</LinearLayout>

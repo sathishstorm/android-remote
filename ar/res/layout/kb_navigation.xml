@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+	
+    <RelativeLayout
+        android:id="@+id/layTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/subtitle_bg"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+        
+    	<ImageView
+        	android:layout_width="25dp"
+        	android:layout_height="25dp"
+        	android:layout_alignParentLeft="true"
+        	android:layout_alignParentTop="true"
+        	android:clickable="true"
+        	android:onClick="onPrev"
+        	android:src="@drawable/prev" />
+	
+	    <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentTop="true"
+        	android:layout_centerHorizontal="true"
+        	android:text="Navigation"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+	    <ImageView
+        	android:layout_width="25dp"
+        	android:layout_height="25dp"
+        	android:layout_alignParentRight="true"
+        	android:layout_alignParentTop="true"
+        	android:clickable="true"
+        	android:onClick="onNext"
+        	android:src="@drawable/next" />
+        
+	</RelativeLayout>
+	
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layTitle"
+        android:scrollbars="none" >
+	
+        <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:stretchColumns="0, 1, 2" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/red_key_press"
+                android:onClick="onNaviClick"
+                android:text="ESC"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+            
+            <ImageView
+                android:id="@+id/imgNaviUp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/key_press"
+                android:clickable="true"
+                android:onClick="onNaviClick"
+                android:src="@drawable/up" />
+            
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/red_key_press"
+                android:onClick="onNaviClick"
+                android:text="DEL"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+            
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <ImageView
+                android:id="@+id/imgNaviLeft"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/key_press"
+                android:clickable="true"
+                android:onClick="onNaviClick"
+                android:src="@drawable/left" />
+            
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/green_key_press"
+                android:onClick="onNaviClick"
+                android:text="ENTER"
+                android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+            
+            <ImageView
+                android:id="@+id/imgNaviRight"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/key_press"
+                android:clickable="true"
+                android:onClick="onNaviClick"
+                android:src="@drawable/right" />
+            
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onNaviClick"
+                android:text="TAB"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+            
+            <ImageView
+                android:id="@+id/imgNaviDown"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/key_press"
+                android:clickable="true"
+                android:onClick="onNaviClick"
+                android:src="@drawable/down" />
+            
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/key_press"
+                android:onClick="onNaviClick"
+                android:text="ALT"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+            
+        </TableRow>
+        
+    </TableLayout>
+        
+	</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	
+    <include layout="@layout/header"
+        android:id="@+id/header" />	
+    
+	<ScrollView
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:padding="10dp" >
+
+	    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" >
+
+        <TextView
+            android:clickable="true"
+            android:onClick="onUtil"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/util_item_press"
+            android:drawableLeft="@drawable/util_control"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="Control Panel"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:drawable/title_bar" />
+    
+    <TextView
+        android:clickable="true"
+            android:onClick="onUtil"
+        android:background="@drawable/util_item_press"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/util_calc"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="Calculator"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:drawable/title_bar" />
+    
+    <TextView
+        android:clickable="true"
+            android:onClick="onUtil"
+        android:background="@drawable/util_item_press"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/util_cmd"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="Command Prompt"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:drawable/title_bar" />
+    
+    <TextView
+        android:clickable="true"
+            android:onClick="onUtil"
+        android:background="@drawable/util_item_press"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/util_manager"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="Utility Manager"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:drawable/title_bar" />
+    
+    <TextView
+        android:clickable="true"
+            android:onClick="onUtil"
+        android:background="@drawable/util_item_press"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/util_notepad"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="Notepad"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:drawable/title_bar" />
+
+    <TextView
+        android:clickable="true"
+            android:onClick="onUtil"
+        android:background="@drawable/util_item_press"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/util_paint"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="MS Paint"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:drawable/title_bar" />
+    
+    <TextView
+        android:clickable="true"
+            android:onClick="onUtil"
+        android:background="@drawable/util_item_press"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/util_regedi"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="Registry Editor"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:drawable/title_bar" />
+    
+    <TextView
+        android:clickable="true"
+            android:onClick="onUtil"
+        android:background="@drawable/util_item_press"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/util_remote"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="Remote Desktop"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:drawable/title_bar" />
+    
+    <TextView
+        android:clickable="true"
+            android:onClick="onUtil"
+        android:background="@drawable/util_item_press"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/util_service"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="Window Services"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:drawable/title_bar" />
+    
+    <TextView
+        android:clickable="true"
+            android:onClick="onUtil"
+        android:background="@drawable/util_item_press"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/util_task"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="Task Manager"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
